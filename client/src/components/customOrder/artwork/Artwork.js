@@ -92,7 +92,7 @@ export default class Artwork extends Component {
                             <div className="upload-img">
                             <label>Left</label>
                                 <div className="upload-container">
-                                
+                                <label style={{fontSize: "9px"}}>Left Image</label>
                                 <input type="file" onChange={this.props.uploadLeftImage} style={{width: "85px"}} />
 
                                 </div>
@@ -103,7 +103,7 @@ export default class Artwork extends Component {
                                 {/* <img id="target" src={this.state.image}/> */}
 
                                 <div className="upload-container">
-                                
+                                <label style={{fontSize: "9px"}}>Right Image</label>
                                 <input type="file" onChange={this.props.uploadrightImage} style={{width: "85px"}}/>
                             </div>
                             </div>

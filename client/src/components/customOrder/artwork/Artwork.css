@@ -72,11 +72,11 @@ min-height: 85px;
        url('../../../assets/fonts/good times rg.svg') format('svg');
   font-weight: normal;
   font-style: normal;
- }
- .product-preview
- {
+}
+.product-preview
+{
     position: relative;
     display: block;
     font-family: 'Conv_good times rg';
     
- }
+}

@@ -360,6 +360,7 @@ ul{
 {
     position: relative;
     display: block;
+    font-family: 'Conv_good times rg';
     
 }
 .product-preview img{
@@ -408,16 +409,16 @@ ul{
     width: 202px;
     height: 329px;
     z-index: 2px;
-    margin-top: 3px;
-    margin-left: 3px;
+    margin-top: 0px;
+    margin-left: 5px;
     position: absolute !important;
     transform: translate(0px, -14px);
 }
 .shell-right{
     width: 211px;
     height: 341px;
-    margin-left: 22px;
-    margin-top: -18px;
+    margin-left: 20px;
+    margin-top: -16px;
     position: absolute;
     transform: translateX(-20px);
 }
@@ -432,12 +433,14 @@ ul{
 .st-logo-left{
     width: 86px;
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: -40px;
     z-index: 1;
-    border-radius: 0;
+    border-radius: 15px;
     position: relative;
     display: block;
-    transform: translate(160px, 215px);
+    /*transform: translate(160px, 215px);*/
+    transform: translate(144px, 182px);
+    border-radius:30%;
 }
 .st-logo-right{
     width: 86px;
@@ -448,7 +451,7 @@ ul{
     position: relative;
     display: block;
     transform: translate(170px, 200px);
-    border-radius: 0;
+    border-radius:30%;
 }
 .button-column{
     margin-bottom: 50px;
@@ -458,6 +461,25 @@ ul{
     height: 331px;
     margin:30px auto 120px;
     position: initial;
+}
+.custom-text-box-right{
+    font-size: 25px !important;
+    transform: translate(330px, 200px) !important;
+    position: absolute !important;
+}
+.custom-text-box-left{
+    font-size: 25px !important;
+    margin-top: 0px;
+    transform: translate(100px, 231px) !important;
+    margin-left: 0px;
+    position: inherit;
+    z-index: 999 !important;
+    width: 130px;
+    background: #cf595900;
+    text-align: center;
+    border: 1px solid #000;
+    color: rgb(0, 0, 0);
+    position: absolute !important;
 }
 @media only screen and (max-width: 768px){
 .mobile-hide{
@@ -502,7 +524,7 @@ ul{
 }
 .st-logo-right{
     width: 70px;
-    transform: translate(216px,200px) !important;
+    transform: translate(216px, 170px) !important;
 }
 .specification-price{
     padding:0 15px;
@@ -521,6 +543,105 @@ ul{
 }
 .caseing-container img{
     width: 280px;
+}
+.custom-text-box-right{
+    font-size: 18px !important;
+    transform: translate(192px, 200px) !important;
+    position: absolute !important;
+}
+.custom-text-box-left{
+    font-size: 18px !important;
+    margin-top: 0px;
+    transform: translate(0px, 200px) !important;
+    margin-left: 0px;
+    position: inherit;
+    z-index: 999 !important;
+    width: 130px;
+    background: #cf595900;
+    text-align: center;
+    border: 1px solid #000;
+    color: rgb(0, 0, 0);
+    position: absolute !important;
+}
+
+}
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+.custom-text-box-right{
+    font-size: 18px !important;
+    transform: translate(192px, 200px) !important;
+    position: absolute !important;
+}
+.custom-text-box-left{
+    font-size: 18px !important;
+    margin-top: 0px;
+    transform: translate(0px, 200px) !important;
+    margin-left: 0px;
+    position: inherit;
+    z-index: 999 !important;
+    width: 130px;
+    background: #cf595900;
+    text-align: center;
+    border: 1px solid #000;
+    color: rgb(0, 0, 0);
+    position: absolute !important;
+}
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+.front-faceplate-right{
+    width: 160px;
+    height: 261px;
+    z-index: 2;
+    margin-top: 45px;
+    margin-left: 0px;
+    position: absolute !important;
+    -webkit-transform: translate(0px, -14px);
+    transform: translate(0px, -14px);
+}
+.shell-right {
+    margin-left: 15px;
+}
+.st-logo-right {
+    width: 70px;
+    -webkit-transform: translate(216px, 170px) !important;
+    transform: translate(359px, 190px) !important;
+}
+.st-logo-left {
+    width: 70px !important;
+    z-index: 9 !important;
+    -webkit-transform: translate(181px, 208px) !important;
+    transform: translate(181px, 220px) !important;
+}
+.custom-text-box-right{
+    font-size: 18px !important;
+    transform: translate(192px, 200px) !important;
+    position: absolute !important;
+}
+.custom-text-box-left{
+    font-size: 18px !important;
+    margin-top: 0px;
+    transform: translate(0px, 200px) !important;
+    margin-left: 0px;
+    position: inherit;
+    z-index: 999 !important;
+    width: 130px;
+    background: #cf595900;
+    text-align: center;
+    border: 1px solid #000;
+    color: rgb(0, 0, 0);
+    position: absolute !important;
 }
 
 }

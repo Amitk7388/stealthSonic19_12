@@ -167,25 +167,25 @@ import Home from "././components/home/Home";
 import PrivateRoute from '././components/common/PrivateRoute'
 import Success from '././components/success/Success'
 
-// if(localStorage.jwtToken) {
+if(localStorage.jwtToken) {
 
-//   setAuthToken(localStorage.jwtToken);
+  setAuthToken(localStorage.jwtToken);
 
-//   const decoded = jwt_decode(localStorage.jwtToken);
+  const decoded = jwt_decode(localStorage.jwtToken);
 
-//   store.dispatch(setCurrentUser(decoded));
+  store.dispatch(setCurrentUser(decoded));
 
-//   const currentTime = Date.now()/1000;
-//   if(decoded.exp < currentTime) {
-//     //Logout user
-//     store.dispatch(logoutUser());
-//     //Clear current Profile
-//     store.dispatch(clearCurrentProfile());
-//     //Redirect to login
-//     window.location.href = '/login';
-//   }
-//   store.dispatch(clearCurrentProfile());
-// }
+  const currentTime = Date.now()/1000;
+  if(decoded.exp < currentTime) { 
+    //Logout user
+    store.dispatch(logoutUser());
+    //Clear current Profile
+    store.dispatch(clearCurrentProfile());
+    //Redirect to login
+    window.location.href = '/login';
+  }
+  store.dispatch(clearCurrentProfile());
+}
 if(localStorage.jwtToken) {
 
   setAuthToken(localStorage.jwtToken);

@@ -2721,7 +2721,7 @@ class CustomOrder extends Component {
                     leftImageVisibility:"none",
                     leftUploadedText: event.target.value,
                     defaultLogoLeftVisibility:"none",
-                    defaultLeftLogoT:"translate(140px,200px)",
+                    //defaultLeftLogoT:"translate(140px,200px)",
                     // uploadleftLogo2:"",
                     // defaultRightLogoT:""
                     
@@ -2756,7 +2756,7 @@ class CustomOrder extends Component {
                     // uploadleftLogo2:"",
                     // uploadrightLogo2:"",
 
-                    defaultLeftLogoT:"translate(140px,200px)",
+                    //defaultLeftLogoT:"translate(140px,200px)",
                     defaultRightLogoT:""
                 })
                 
@@ -3175,7 +3175,7 @@ class CustomOrder extends Component {
 
                                  <img className="responsive st-logo-left" id="adel-mask-preload-left"  src={this.state.leftUploadedImage}/>
 
-                                 <span id="leftUploadedTextID" style={{fontSize: "20px", marginTop:"0", height: 0, marginLeft: "0", transform: "translate(160px, 200px)", position: "inherit", zIndex: 1, color: this.state.leftCaseColor}}>{this.state.leftUploadedText}</span>
+                                 <input id="leftUploadedTextID" className="custom-text custom-text-box-left" style={{fontSize: "25px", marginTop:"0", transform: "translate(101px, 231px)", marginLeft: "-17px", position: "inherit", zIndex: 1, width: "130px", background: "transparent", textAlign: "center", border: "none", color: this.state.leftCaseColor}} value={this.state.leftUploadedText} readOnly/>
                                  </div>
                                  
 
@@ -3200,7 +3200,7 @@ class CustomOrder extends Component {
                               
                               <img className="responsive st-logo-right" style={{width:"86px", paddingRight:"-62px", display:this.state.rightImageVisibility ,marginLeft:"0", marginTop:"0px", zIndex: "1", position: 'relative',height:"86px", transform: 'translate(385px, 150px)'}}  src={this.state.rightUploadedImage}/>
                              
-                              <span id="rightUploadedTextID" style={{fontSize: "20px", marginTop:"0", transform: "translate(365px, 200px)", marginLeft: "40px", position: "inherit", zIndex: 1, color: this.state.rightCaseColor}}>{this.state.rightUploadedText}</span>
+                              <span id="rightUploadedTextID" style={{fontSize: "25px", marginTop:"0", transform: "translate(328px, 200px)", marginLeft: "40px", position: "inherit", zIndex: 1, color: this.state.rightCaseColor}}>{this.state.rightUploadedText}</span>
                                  
 
             </div>
@@ -3221,7 +3221,7 @@ class CustomOrder extends Component {
                                 <div className="product-preview caseing-container" style={{display:this.state.casingChecker}}>
                                 <img src={require('../../assets/image/case.png')}/>
 
-                                <span style={{fontSize: "20px", marginTop:"-155px", marginLeft: "175px", zIndex: 1, color:"#000000"}}>{this.state.uploadedCasingText}</span>
+                                <span style={{fontSize: "25px", marginTop:"-155px", marginLeft: "175px", zIndex: 1, color:"#000000"}}>{this.state.uploadedCasingText}</span>
                                 </div>
 
                                 {/* end show new image for casing */}
